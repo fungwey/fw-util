@@ -1,0 +1,17 @@
+{
+  "name": "fwutil",
+  "version": "0.0.1",
+  "description": "FW 工具库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "TS"
+  ],
+  "author": "fengwei",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.1.2"
+  }
+}
