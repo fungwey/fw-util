@@ -1,7 +1,11 @@
 const eslintrc = {
   parser: "@typescript-eslint/parser",
-  extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
-  plugins: ["@typescript-eslint"],
+  extends: [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jest/recommended",
+  ],
+  plugins: ["@typescript-eslint", "jest"],
   env: {
     browser: true,
     node: true,
@@ -42,7 +46,7 @@ const eslintrc = {
         delimiter: "none",
       },
     ], // 成员分隔符
-    "@typescript-eslint/semi": ["error", "never"],
+    "@typescript-eslint/semi": ["error", "always"],
 
     "space-infix-ops": ["error"],
     "comma-dangle": [
@@ -56,9 +60,9 @@ const eslintrc = {
       },
     ],
     "space-before-function-paren": ["error", "always"], // 方法名后空格
-    semi: ["error", "never"], // 无分号
+    semi: ["error", "always"], // 无分号
     indent: ["error", 2], // 缩进2
-    quotes: ["error", "single"], // 单引号
+    quotes: ["error", "double"], // 双引号
     "no-param-reassign": 0, // 传入参数可修改
     "no-restricted-globals": ["error", "event"], // 部分全局变量禁止直接使用
   },
